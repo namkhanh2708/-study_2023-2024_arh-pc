@@ -1,119 +1,44 @@
----
-## Front matter
-title: "Шаблон отчёта по лабораторной работе"
-subtitle: "Простейший вариант"
-author: "Дмитрий Сергеевич Кулябов"
+# LAB REPORT No. 2
+## discipline: Computer architecture
 
-## Generic otions
-lang: ru-RU
-toc-title: "Содержание"
+Students: Vuong Nam Khanh
+<br>
+Group: NKAbd-02-23
 
-## Bibliography
-bibliography: bib/cite.bib
-csl: pandoc/csl/gost-r-7-0-5-2008-numeric.csl
+***
+# DESCRIPTION OF THE RESULTS OF COMPLETION OF TASKS
+Work order
 
-## Pdf output format
-toc: true # Table of contents
-toc-depth: 2
-lof: true # List of figures
-lot: true # List of tables
-fontsize: 12pt
-linestretch: 1.5
-papersize: a4
-documentclass: scrreprt
-## I18n polyglossia
-polyglossia-lang:
-  name: russian
-  options:
-	- spelling=modern
-	- babelshorthands=true
-polyglossia-otherlangs:
-  name: english
-## I18n babel
-babel-lang: russian
-babel-otherlangs: english
-## Fonts
-mainfont: PT Serif
-romanfont: PT Serif
-sansfont: PT Sans
-monofont: PT Mono
-mainfontoptions: Ligatures=TeX
-romanfontoptions: Ligatures=TeX
-sansfontoptions: Ligatures=TeX,Scale=MatchLowercase
-monofontoptions: Scale=MatchLowercase,Scale=0.9
-## Biblatex
-biblatex: true
-biblio-style: "gost-numeric"
-biblatexoptions:
-  - parentracker=true
-  - backend=biber
-  - hyperref=auto
-  - language=auto
-  - autolang=other*
-  - citestyle=gost-numeric
-## Pandoc-crossref LaTeX customization
-figureTitle: "Рис."
-tableTitle: "Таблица"
-listingTitle: "Листинг"
-lofTitle: "Список иллюстраций"
-lotTitle: "Список таблиц"
-lolTitle: "Листинги"
-## Misc options
-indent: true
-header-includes:
-  - \usepackage{indentfirst}
-  - \usepackage{float} # keep figures where there are in the text
-  - \floatplacement{figure}{H} # keep figures where there are in the text
----
+1. I open a terminal and enter commands, specify the username and email address <br>
+![pic 1](https://drive.google.com/uc?id=1c95hytTNuburxZLVEFzJC6nLmKxkM4EF)<br>
 
-# Цель работы
+2. I have configured utf-8 in git message output<br>
+![pic 2](https://drive.google.com/uc?id=1XNK9C1xR2RSHaanipqRj53ASQlr28MAe)<br>
 
-Здесь приводится формулировка цели лабораторной работы. Формулировки
-цели для каждой лабораторной работы приведены в методических
-указаниях.
+3. I will set the name of the initial branch<br>
+![pic 3](https://drive.google.com/uc?id=1p5RXPwuAJxmgkomnkru49cJ3P8Ti-aye)<br>
 
-Цель данного шаблона --- максимально упростить подготовку отчётов по
-лабораторным работам.  Модифицируя данный шаблон, студенты смогут без
-труда подготовить отчёт по лабораторным работам, а также познакомиться
-с основными возможностями разметки Markdown.
+4. I enter the autocrlf parameter and the safecrlf parameter<br>
+![pic 4](https://drive.google.com/uc?id=1P2xwY9R9RASmkCQUTagFiZVw-vMnHi8i)<br>
 
-# Задание
+5. To further identify the user on the repository server, I generate a key pair<br>
+![pic 5](https://drive.google.com/uc?id=1kh99Kmgp4QOWI8lzmdv_UIuaimV80M9r)<br>
 
-Здесь приводится описание задания в соответствии с рекомендациями
-методического пособия и выданным вариантом.
+6. Then I download the generated public key. I went to http://github.org/, went to Menu and went to settings. After that, select SSH and GPG keys in the side menu and click the New SSH key button<br>
+![pic 6](https://drive.google.com/uc?id=1ww1egSzzbO0MOTys-7YXhcxd5d5SDXNf)<br>
+![pic 7](https://drive.google.com/uc?id=1yT_xBpnI9NPutxrBrd1fYKG7ZQMUMR4g)<br>
+![pic 8](https://drive.google.com/uc?id=1PgEHNWJYHiIyQWIJmcD8G9a2llHhA0QV)<br>
 
-# Теоретическое введение
+7. Go to the repository page with the course template https://github.com/yamadharma/cour se-directory-student-template and select Use this template.<br>
+![pic 9](https://drive.google.com/uc?id=1AWLKoE7oiYKMnWEMujeQKalyiBFBsWyk)<br>
+![pic 10](https://drive.google.com/uc?id=1U4X38mbbvbYFo6lL072PJmpiUnlyFJkW)<br>
 
-Здесь описываются теоретические аспекты, связанные с выполнением работы.
+8. I opened a terminal and navigated to the course folder:<br>
+![pic 11](https://drive.google.com/uc?id=1BMPMdBqY1eQDuou-IFIQFfdbA85hHtDN)<br>
 
-Например, в табл. @tbl:std-dir приведено краткое описание стандартных каталогов Unix.
+9. I clone the created repository:<br>
+![pic 12](https://drive.google.com/uc?id=1Jl-pfq_G5Y1X52wxANNpJDtstsVqraD1)<br>
+![pic 13](https://drive.google.com/uc?id=1CQV4X2LO1J9mvMpmnoXDRVpTV4NNHZtW)<br>
 
-: Описание некоторых каталогов файловой системы GNU Linux {#tbl:std-dir}
-
-| Имя каталога | Описание каталога                                                                                                          |
-|--------------|----------------------------------------------------------------------------------------------------------------------------|
-| `/`          | Корневая директория, содержащая всю файловую                                                                               |
-| `/bin `      | Основные системные утилиты, необходимые как в однопользовательском режиме, так и при обычной работе всем пользователям     |
-| `/etc`       | Общесистемные конфигурационные файлы и файлы конфигурации установленных программ                                           |
-| `/home`      | Содержит домашние директории пользователей, которые, в свою очередь, содержат персональные настройки и данные пользователя |
-| `/media`     | Точки монтирования для сменных носителей                                                                                   |
-| `/root`      | Домашняя директория пользователя  `root`                                                                                   |
-| `/tmp`       | Временные файлы                                                                                                            |
-| `/usr`       | Вторичная иерархия для данных пользователя                                                                                 |
-
-Более подробно об Unix см. в [@gnu-doc:bash;@newham:2005:bash;@zarrelli:2017:bash;@robbins:2013:bash;@tannenbaum:arch-pc:ru;@tannenbaum:modern-os:ru].
-
-# Выполнение лабораторной работы
-
-Описываются проведённые действия, в качестве иллюстрации даётся ссылка на иллюстрацию (рис. @fig:001).
-
-![Название рисунка](image/placeimg_800_600_tech.jpg){#fig:001 width=70%}
-
-# Выводы
-
-Здесь кратко описываются итоги проделанной работы.
-
-# Список литературы{.unnumbered}
-
-::: {#refs}
-:::
+10. I will go to the course directory, delete unnecessary files, create the necessary directories and upload the files to the server<br>
+![pic 14](https://drive.google.com/uc?id=1p68GTsqg2spDWwOtFDn3g61GVq3BI--F)<br>
